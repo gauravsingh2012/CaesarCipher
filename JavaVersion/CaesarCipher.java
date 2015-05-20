@@ -58,6 +58,15 @@ public class CaesarCipher {
 		}
 		return encoded.toString();
 	}
+	
+	/*
+	 * This function takes in an encoded character and the last character in
+	 * the english alphabet. It compares both of them to determine if there
+	 * is an overflow of a character. For Example, if originalcharacter is x and
+	 * we shift it by 3 times, the encoded character should be a. so If x + 3 > z,
+	 * we subtract 26 from it to get the wrapped around character. 
+	 * 
+	 */
 
 	private void encodeCharacter(Character encodedCharacter,
 			Character lastCharacter) {
